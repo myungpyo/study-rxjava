@@ -1,9 +1,11 @@
-# study-rxjava
+[![Build Status](https://travis-ci.org/myungpyo/study-rxjava.svg?branch=master)](https://travis-ci.org/myungpyo/study-rxjava)
+
+# study-rxjava 
 Test cases for RX Java
 This is android project 
 There are only JUnit testcases, although I've created this project as type of android.
 
-(Some day This project will have android dependent RX implementation.
+(Some day This project will have android dependent RX implementation.)
 
 # Usage
 Most of test cases extend BasePlayGround which offers locking functionality for each test
