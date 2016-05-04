@@ -10,6 +10,7 @@ import rx.Observer;
 
 /**
  * Created by myungpyo.shim on 2016. 4. 25..
+ * Simple observable test. just emit some strings.
  */
 @Slf4j
 public class Play1_EmitFromStringArray extends BasePlayground {
