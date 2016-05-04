@@ -24,6 +24,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.3.0'
     compile 'io.reactivex:rxjava:1.1.3'
+    compile 'io.reactivex:rxjava-joins:0.22.0'
 
     compile 'org.slf4j:slf4j-api:1.7.9'
     compile 'ch.qos.logback:logback-classic:1.1.7'

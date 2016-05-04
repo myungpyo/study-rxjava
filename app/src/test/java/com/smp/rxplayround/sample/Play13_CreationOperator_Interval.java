@@ -22,7 +22,7 @@ public class Play13_CreationOperator_Interval extends BasePlayground {
     @Test
     public void printStrings() throws Exception {
 
-        Observable<Long> intervalObservable = Observable.interval(1, 1, TimeUnit.SECONDS);
+        Observable<Long> intervalObservable = Observable.interval(100, 300, TimeUnit.MILLISECONDS);
 
         intervalObservable.take(5).subscribe(new Observer<Long>() {
             @Override

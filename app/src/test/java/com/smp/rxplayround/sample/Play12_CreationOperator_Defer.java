@@ -28,7 +28,7 @@ public class Play12_CreationOperator_Defer extends BasePlayground {
             }
         });
 
-        Utils.sleep(2000);
+        Utils.sleep(100);
 
         deferredObserble.subscribe();
     }
@@ -40,7 +40,7 @@ public class Play12_CreationOperator_Defer extends BasePlayground {
     static class BigGiantObject {
 
         public BigGiantObject() {
-            Utils.sleep(3000);
+            Utils.sleep(300);
             log.debug("Big Gient Object has been created.");
         }
     }

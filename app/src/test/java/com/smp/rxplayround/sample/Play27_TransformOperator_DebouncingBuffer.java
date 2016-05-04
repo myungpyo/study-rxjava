@@ -25,9 +25,9 @@ public class Play27_TransformOperator_DebouncingBuffer extends BasePlayground {
 
         Observable<Integer> sharedObserver = Utils.createInfiniteRandomIntervalIntegerEmitter().subscribeOn(Schedulers.newThread()).share();
 
-        Observable<Integer> debounce = sharedObserver.debounce(3000, TimeUnit.MILLISECONDS);
+        Observable<Integer> debounce = sharedObserver.debounce(300, TimeUnit.MILLISECONDS);
 
-        sharedObserver.buffer(debounce).subscribe(new Observer<List<Integer>>() {
+        sharedObserver.buffer(debounce).take(10).subscribe(new Observer<List<Integer>>() {
             @Override
             public void onCompleted() {
                 log.debug("onCompleted");

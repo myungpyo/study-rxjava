@@ -75,7 +75,7 @@ public class Utils {
                     log.debug("Emit item {}", num);
                     subscriber.onNext(num);
 
-                    Utils.sleep(500);
+                    Utils.sleep(200);
                 }
                 subscriber.onCompleted();
             }

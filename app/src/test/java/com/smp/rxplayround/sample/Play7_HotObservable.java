@@ -34,10 +34,12 @@ public class Play7_HotObservable extends BasePlayground {
                     @Override
                     public void onCompleted() {
                         log.debug("#Subscribe1 is completed successfully");
+                        stopWaitingForObservable();
                     }
                     @Override
                     public void onError(Throwable e) {
                         log.debug("#Subscribe1 is completed with an error : {}", e.getMessage());
+                        stopWaitingForObservable();
                     }
                     @Override
                     public void onNext(Integer integer) {
@@ -53,10 +55,12 @@ public class Play7_HotObservable extends BasePlayground {
                     @Override
                     public void onCompleted() {
                         log.debug("#Subscribe2 is completed successfully");
+                        stopWaitingForObservable();
                     }
                     @Override
                     public void onError(Throwable e) {
                         log.debug("#Subscribe2 is completed with an error : {}", e.getMessage());
+                        stopWaitingForObservable();
                     }
                     @Override
                     public void onNext(Integer integer) {
@@ -64,7 +68,7 @@ public class Play7_HotObservable extends BasePlayground {
                     }
                 });
 
-        waitForObservable();
+        waitForObservable(2);
     }
 
 
