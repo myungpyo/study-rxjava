@@ -17,7 +17,7 @@ import rx.functions.Func1;
 public class Play38_ErrorHandling_Retry extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         Observable.create(new Observable.OnSubscribe<Integer>() {
             @Override

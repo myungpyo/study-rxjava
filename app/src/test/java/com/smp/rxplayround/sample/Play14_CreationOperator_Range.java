@@ -17,7 +17,7 @@ import rx.Observer;
 public class Play14_CreationOperator_Range extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         Observable<Integer> rangeObservable = Observable.range(1, 5);
 

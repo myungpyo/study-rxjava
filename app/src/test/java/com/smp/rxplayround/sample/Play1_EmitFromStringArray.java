@@ -16,7 +16,7 @@ import rx.Observer;
 public class Play1_EmitFromStringArray extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
         Observable.from(new String[]{"test1", "test2", "test3"})
                 .subscribe(new Observer<String>() {
                     @Override

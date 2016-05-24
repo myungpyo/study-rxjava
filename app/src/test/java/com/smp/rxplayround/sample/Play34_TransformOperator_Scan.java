@@ -19,7 +19,7 @@ import rx.observables.GroupedObservable;
 public class Play34_TransformOperator_Scan extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         Observable.just(1, 2, 3, 4, 5, 6, 7, 8, 9, 10).scan(new Func2<Integer, Integer, Integer>() {
             @Override

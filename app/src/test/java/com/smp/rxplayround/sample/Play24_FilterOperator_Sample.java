@@ -19,7 +19,7 @@ import rx.schedulers.Schedulers;
 public class Play24_FilterOperator_Sample extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         Observable<Integer> observable = Utils.createFiniteRegulerIntervalIntegerEmitter(1, 10);
 

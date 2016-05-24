@@ -19,7 +19,7 @@ import rx.observables.GroupedObservable;
 public class Play33_TransformOperator_GroupBy extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         Observable.from(new Object[]{1, "A", "B", 2, 3, 4, 5, "C", "D"})
             .groupBy(new Func1<Object, String>() {

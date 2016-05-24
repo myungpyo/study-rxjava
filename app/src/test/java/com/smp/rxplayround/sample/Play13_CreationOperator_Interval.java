@@ -20,7 +20,7 @@ import rx.functions.Func0;
 public class Play13_CreationOperator_Interval extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         Observable<Long> intervalObservable = Observable.interval(100, 300, TimeUnit.MILLISECONDS);
 

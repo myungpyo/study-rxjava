@@ -22,7 +22,7 @@ import rx.schedulers.Schedulers;
 public class Play29_TransformOperator_Map extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         Observable.from(new Integer[]{1,2,3,4,5})
             .map(new Func1<Integer, String>() {

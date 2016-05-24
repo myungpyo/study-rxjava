@@ -16,7 +16,7 @@ import rx.subjects.ReplaySubject;
 public class Play10_ReplaySubject extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         ReplaySubject<String> replaySubject = ReplaySubject.create();
 

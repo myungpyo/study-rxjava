@@ -16,7 +16,7 @@ import rx.Observer;
 public class Play100_Custom_Chain extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         ChainedObservable.from(new AggregatedResult(""), Observable.just(new TestData1("aaa")), new ChainedObservable.DataAbsorbable<AggregatedResult, TestData1>() {
             @Override

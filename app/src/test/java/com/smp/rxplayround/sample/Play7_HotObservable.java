@@ -20,7 +20,7 @@ import rx.observables.ConnectableObservable;
 public class Play7_HotObservable extends BasePlayground {
 
     @Test
-    public void subscribeHotObservable() throws Exception {
+    public void play() throws Exception {
 
         TemperatureObservable temperatureObservable = new TemperatureObservable();
         //Start

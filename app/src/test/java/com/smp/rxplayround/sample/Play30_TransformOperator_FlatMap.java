@@ -23,7 +23,7 @@ import rx.schedulers.Schedulers;
 public class Play30_TransformOperator_FlatMap extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         Observable.from(new String[]{"1-3","5-8", "10-15"})
             .flatMap(new Func1<String, Observable<Integer>>() {

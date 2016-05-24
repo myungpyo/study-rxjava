@@ -20,7 +20,7 @@ import rx.Observer;
 public class Play4_EmitFromJust extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         Observable.just("test1", "test2", "test3")
                 .subscribe(new Observer<String>() {

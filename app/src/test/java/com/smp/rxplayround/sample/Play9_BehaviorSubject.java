@@ -16,7 +16,7 @@ import rx.subjects.PublishSubject;
 public class Play9_BehaviorSubject extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         BehaviorSubject<String> behaviorSubject = BehaviorSubject.create();
 

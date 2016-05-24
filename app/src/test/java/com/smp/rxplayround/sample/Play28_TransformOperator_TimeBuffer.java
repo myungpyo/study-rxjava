@@ -22,7 +22,7 @@ import rx.schedulers.Schedulers;
 public class Play28_TransformOperator_TimeBuffer extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         Observable<Integer> observable = Observable.create(new Observable.OnSubscribe<Integer>() {
             @Override

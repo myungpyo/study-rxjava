@@ -18,7 +18,7 @@ import rx.Observer;
 public class Play2_EmitFromStringList extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
         List<String> targetList = new ArrayList<>();
         targetList.add("test1");
         targetList.add("test2");

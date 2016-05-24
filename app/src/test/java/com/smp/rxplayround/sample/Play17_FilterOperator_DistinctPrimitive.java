@@ -15,7 +15,7 @@ import rx.Observer;
 public class Play17_FilterOperator_DistinctPrimitive extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         Observable<Integer> observable = Observable.just(1, 2, 3, 4, 4, 5, 6, 6, 7, 7);
 

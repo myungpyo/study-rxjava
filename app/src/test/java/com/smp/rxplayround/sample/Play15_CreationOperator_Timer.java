@@ -17,7 +17,7 @@ import rx.Observer;
 public class Play15_CreationOperator_Timer extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         Observable<Long> rangeObservable = Observable.timer(3, TimeUnit.SECONDS);
 

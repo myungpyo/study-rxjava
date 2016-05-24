@@ -24,7 +24,7 @@ import rx.observables.JoinObservable;
 public class Play39_Combining_AndWhenThen extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         Observable<Integer> source = Observable.just(1, 2, 3, 4, 5);
         Observable<Long> interval1 = Observable.interval(500, TimeUnit.MILLISECONDS);

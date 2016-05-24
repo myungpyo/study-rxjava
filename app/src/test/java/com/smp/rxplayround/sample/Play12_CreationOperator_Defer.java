@@ -16,7 +16,7 @@ import rx.functions.Func0;
 public class Play12_CreationOperator_Defer extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         //Below method are not supported under java 8
 //        Observable.defer(this::createBigGiantObject);

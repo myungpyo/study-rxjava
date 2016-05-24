@@ -17,7 +17,7 @@ import rx.subjects.PublishSubject;
 public class Play8_PublishSubject extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         PublishSubject<String> publishSubject = PublishSubject.create();
 

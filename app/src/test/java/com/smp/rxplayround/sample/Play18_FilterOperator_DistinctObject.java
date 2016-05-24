@@ -16,7 +16,7 @@ import rx.functions.Func1;
 public class Play18_FilterOperator_DistinctObject extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         Person[] people = new Person[]{
                 new Person(0, "Peter"), new Person(0, "Harry"),

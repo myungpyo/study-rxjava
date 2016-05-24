@@ -19,7 +19,7 @@ import rx.functions.Func0;
 public class Play36_TransformOperator_ClosingWindow extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         Observable.interval(500, TimeUnit.MILLISECONDS)
             .window(new Func0<Observable<Long>>() {

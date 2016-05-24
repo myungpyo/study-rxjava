@@ -17,7 +17,7 @@ import rx.schedulers.Schedulers;
 public class Play6_EmitFromWorkerThread extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
         Observable.from(new String[]{"test1", "test2", "test3"})
                 .subscribeOn(Schedulers.io())
                 .subscribe(new Observer<String>() {

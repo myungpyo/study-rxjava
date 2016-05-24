@@ -19,7 +19,7 @@ import rx.schedulers.Schedulers;
 public class Play32_TransformOperator_ConcatMapOnWorker extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         Observable.from(new String[]{"1-3","5-8", "10-15"})
             .concatMap(new Func1<String, Observable<Integer>>() {

@@ -20,7 +20,7 @@ import rx.schedulers.Schedulers;
 public class Play27_TransformOperator_DebouncingBuffer extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
 
         Observable<Integer> sharedObserver = Utils.createInfiniteRandomIntervalIntegerEmitter().subscribeOn(Schedulers.newThread()).share();

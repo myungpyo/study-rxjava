@@ -23,7 +23,7 @@ import rx.Observer;
 public class Play3_EmitFromFuture extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
         Future<String> stringFuture = Executors.newCachedThreadPool().submit(new Callable<String>() {
             @Override
             public String call() throws Exception {

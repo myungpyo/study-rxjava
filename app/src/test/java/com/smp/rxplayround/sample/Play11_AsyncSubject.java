@@ -16,7 +16,7 @@ import rx.subjects.ReplaySubject;
 public class Play11_AsyncSubject extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
 
         AsyncSubject<String> asyncSubject = AsyncSubject.create();
 

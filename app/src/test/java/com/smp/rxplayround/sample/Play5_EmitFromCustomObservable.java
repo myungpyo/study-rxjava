@@ -17,7 +17,7 @@ import rx.schedulers.Schedulers;
 public class Play5_EmitFromCustomObservable extends BasePlayground {
 
     @Test
-    public void printStrings() throws Exception {
+    public void play() throws Exception {
         Observable<String> observable = Observable.create(new Observable.OnSubscribe<String>() {
             @Override
             public void call(Subscriber<? super String> subscriber) {
