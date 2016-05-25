@@ -5,25 +5,26 @@ import com.smp.rxplayround.BasePlayground;
 import org.junit.Test;
 
 import lombok.extern.slf4j.Slf4j;
+import rx.Observable;
 import rx.Observer;
-import rx.subjects.BehaviorSubject;
+import rx.schedulers.Schedulers;
 import rx.subjects.PublishSubject;
 
 /**
  * Created by myungpyo.shim on 2016. 4. 25..
  */
 @Slf4j
-public class BehaviorSubject extends BasePlayground {
+public class UsingPublishSubject extends BasePlayground {
 
     @Test
     public void play() throws Exception {
 
-        rx.subjects.BehaviorSubject<String> behaviorSubject = rx.subjects.BehaviorSubject.create();
+        rx.subjects.PublishSubject<String> publishSubject = rx.subjects.PublishSubject.create();
 
-        behaviorSubject.onNext("test1");
-        behaviorSubject.onNext("test2");
+        publishSubject.onNext("test1");
+        publishSubject.onNext("test2");
 
-        behaviorSubject.subscribe(new Observer<String>() {
+        publishSubject.subscribe(new Observer<String>() {
             @Override
             public void onCompleted() {
                 log.debug("onCompleted");
@@ -40,8 +41,8 @@ public class BehaviorSubject extends BasePlayground {
             }
         });
 
-        behaviorSubject.onNext("test3");
-        behaviorSubject.onNext("test4");
-        behaviorSubject.onCompleted();
+        publishSubject.onNext("test3");
+        publishSubject.onNext("test4");
+        publishSubject.onCompleted();
     }
 }

@@ -6,24 +6,22 @@ import org.junit.Test;
 
 import lombok.extern.slf4j.Slf4j;
 import rx.Observer;
-import rx.subjects.BehaviorSubject;
-import rx.subjects.ReplaySubject;
 
 /**
  * Created by myungpyo.shim on 2016. 4. 25..
  */
 @Slf4j
-public class ReplaySubject extends BasePlayground {
+public class UsingAsyncSubject extends BasePlayground {
 
     @Test
     public void play() throws Exception {
 
-        rx.subjects.ReplaySubject<String> replaySubject = rx.subjects.ReplaySubject.create();
+        rx.subjects.AsyncSubject<String> asyncSubject = rx.subjects.AsyncSubject.create();
 
-        replaySubject.onNext("test1");
-        replaySubject.onNext("test2");
+        asyncSubject.onNext("test1");
+        asyncSubject.onNext("test2");
 
-        replaySubject.subscribe(new Observer<String>() {
+        asyncSubject.subscribe(new Observer<String>() {
             @Override
             public void onCompleted() {
                 log.debug("onCompleted");
@@ -40,8 +38,8 @@ public class ReplaySubject extends BasePlayground {
             }
         });
 
-        replaySubject.onNext("test3");
-        replaySubject.onNext("test4");
-        replaySubject.onCompleted();
+        asyncSubject.onNext("test3");
+        asyncSubject.onNext("test4");
+        asyncSubject.onCompleted();
     }
 }
